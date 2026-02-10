@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Live Webinar | DataMites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #007bff; --dark: #0f172a; --bg: #f8fafc; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--dark); line-height: 1.6; }
+        
+        .header-hero { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); 
+            padding: 60px 20px; text-align: center; color: white; 
+            border-bottom-left-radius: 40px; border-bottom-right-radius: 40px;
+        }
+        .live-badge { background: #ff3e3e; color: white; padding: 5px 15px; border-radius: 50px; font-size: 11px; font-weight: 800; animation: blink 1s infinite; display: inline-block; margin-bottom: 15px; }
+        @keyframes blink { 50% { opacity: 0.5; } }
+        
+        h1 { font-size: 26px; margin-bottom: 10px; font-weight: 800; line-height: 1.2; }
+        .date-info { opacity: 0.8; font-size: 14px; font-weight: 600; }
+
+        .mentor-section {
+            background: white; padding: 20px; border-radius: 25px; 
+            margin: -40px 20px 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); 
+            display: flex; align-items: center; gap: 20px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .mentor-img-box {
+            width: 80px; height: 80px; border-radius: 50%;
+            overflow: hidden; border: 3px solid var(--primary);
+            flex-shrink: 0;
+        }
+        /* LOCAL IMAGE LINK FIXED HERE */
+        .mentor-img-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        .mentor-info h3 { font-size: 18px; font-weight: 800; margin: 0; color: #000; }
+        .mentor-info p { font-size: 13px; color: #64748b; font-weight: 600; }
+
+        .content { padding: 10px 20px; }
+        .info-card { 
+            background: white; padding: 22px; border-radius: 22px; 
+            margin-bottom: 15px; border: 1px solid #edf2f7;
+        }
+        h2 { font-size: 17px; margin-bottom: 8px; color: var(--primary); font-weight: 800; }
+        p { font-size: 14px; color: #475569; }
+
+        .btn-fixed { 
+            position: fixed; bottom: 25px; left: 20px; right: 20px; 
+            background: var(--primary); color: white; padding: 22px; 
+            border-radius: 20px; text-align: center; text-decoration: none; 
+            font-weight: 800; font-size: 16px;
+            box-shadow: 0 12px 25px rgba(0,123,255,0.4); z-index: 100; 
+        }
+        .spacer { height: 120px; }
+    </style>
+</head>
+<body>
+
+    <div class="header-hero">
+        <span class="live-badge">● LIVE WEBINAR</span>
+        <h1>AI & Data Science<br>Career Masterclass</h1>
+        <div class="date-info">Today, Feb 10 | 3:00 PM (IST)</div>
+    </div>
+
+    <div class="mentor-section">
+        <div class="mentor-img-box">
+            <img src="ashok_veda_sir.jpg" alt="Ashok Veda">
+        </div>
+        <div class="mentor-info">
+            <h3>Ashok Veda</h3>
+            <p>CEO, DataMites & AI Mentor</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="info-card">
+            <h2>Why AI is Booming Now?</h2>
+            <p>In 2026, AI is everywhere. From ChatGPT to Autonomous cars, companies need experts. This is the perfect time to start your journey.</p>
+        </div>
+        
+        <div class="info-card">
+            <h2>About DataMites</h2>
+            <p>11 years of global excellence in Data Science training. 50,000+ learners. Industry-aligned curriculum with global certifications.</p>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+    <a href="demo-register.html" class="btn-fixed">Reserve My Free Seat →</a>
+
+</body>
+</html>
